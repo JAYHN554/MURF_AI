@@ -1,6 +1,7 @@
 # 🩺 ArogyaSaathi – Voice-based Medical Info Buddy
 
-**ArogyaSaathi** is an AI-powered health companion that simplifies complex medical prescriptions and reports for everyday users — especially the elderly and regional language speakers. By combining OCR, NLP, translation, and voice AI, it helps users understand their medical documents in **Marathi, Hindi, or English** through clear, natural voice explanations using **Murf AI**.
+**ArogyaSaathi** is an AI-powered health companion that simplifies complex medical reports and prescriptions for everyday users — especially the elderly and regional language speakers.  
+Using OCR, GPT-powered NLP, multilingual translation, and lifelike Murf AI voiceovers, ArogyaSaathi helps users understand their health in **Marathi, Hindi, or English** — through voice.
 
 ---
 
@@ -16,18 +17,18 @@
   - Diagnoses
 
 ### 🧠 Simplified Explanation
-- Uses **GPT/NLP** to break down technical jargon
-- Converts medical language into **easy-to-understand text**
+- Uses **OpenAI GPT API** to break down technical jargon
+- Converts medical text into **easy-to-understand summaries**
 
 ### 🌐 Multilingual Translation
 - Translates simplified content into:
   - 🇮🇳 Marathi
   - 🇮🇳 Hindi
-  - 🇬🇧 English (default fallback)
+  - 🇬🇧 English (default)
 
 ### 🔊 Voice Output via Murf AI
-- Converts translated explanations into **human-like audio**
-- Designed for users who prefer listening over reading
+- Converts summaries into **natural-sounding audio**
+- Optimized for non-readers and elders
 
 ---
 
@@ -35,56 +36,76 @@
 
 ### 🧍 Symptom Analysis
 - Extracts symptoms from the report
-- Web-searches trusted sources (e.g., WHO, Mayo Clinic)
-- Provides summarized condition info + when to seek help
+- (Optional) Uses web search to summarize conditions
+- Provides “when to visit doctor” tips
 
 ### 💊 Medication Insights
-- Explains each medicine's use, dosage, and side effects
-- Adds precautions and long-term advice (if needed)
+- Explains usage, dosage, side effects
+- Precaution tips included
 
 ### 🥗 Diet Recommendations
-- Suggests condition-specific diets:
-  - Diabetic → Low sugar
-  - Anemic → Iron-rich foods
-- Culturally-relevant (desi food examples)
+- Suggests condition-specific food:
+  - Diabetic → low sugar
+  - Anemia → iron-rich foods
+- Examples include **Indian home foods**
 
 ### 🧘 Mental Well-being Tips
 - Audio-based mindfulness prompts
-- Encouraging voiceovers for stress relief and chronic care
+- Murf AI gives calming affirmations for chronic stress
 
 ---
 
 ## 🧰 Tech Stack
 
-- **Frontend:** React Native (Expo)
-- **Backend:** Python + FastAPI
-- **OCR:** Pytesseract / EasyOCR
-- **NLP & Simplification:** OpenAI GPT / spaCy / scispaCy
-- **Translation:** Google Translate API / IndicTrans
-- **Voice:** Murf AI (Text-to-Speech)
+| Layer | Technology |
+|-------|------------|
+| 📱 Mobile App | React Native (with Expo) |
+| 🔐 Backend / Auth | Supabase |
+| 📁 File Upload / DB | Supabase Storage + PostgreSQL |
+| 📄 OCR | `react-native-text-recognition` (for images), `pdf-parse` (for PDFs) |
+| 🧠 NLP + Summarization | OpenAI GPT API |
+| 🌐 Translation | Google Translate API (or IndicTrans for better regional support) |
+| 🔊 Voice AI | Murf AI API |
+| 🔔 Notifications | `expo-notifications` (for medicine reminders) |
+| 🌐 Optional Admin Panel | Next.js (Vercel deploy ready) |
 
 ---
 
-## 🛠 How it Works
+## ⚙️ How It Works
 
-UPLOAD → OCR → NLP Simplify → Translate → Murf AI Voice
+UPLOAD (PDF/Image)
 ↓
-Add-ons: Symptoms | Medication | Diet | Mental Tips
+OCR (Text Extraction)
+↓
+Simplify (GPT Summarizer)
+↓
+Translate (to Hindi/Marathi)
+↓
+Voice Output (Murf AI)
+↓
 
+AI Bot for Diet, Wellness, Medication Tips
 
+Notifications for Reminders
 
----
+📅 Roadmap
+ OCR (image + PDF)
 
-## 📦 Setup (Coming Soon)
-Instructions for local dev, API keys (OpenAI, Murf, etc.), and deployment steps will be added soon.
+ GPT Summary
 
----
+ Murf Voice Output
 
-## 📄 License
-This project is for educational and non-commercial demo purposes only. Medical information should be verified with certified health professionals.
+ Hindi + Marathi translation
 
----
+ Medicine Reminder notifications
 
-## ✨ Author
-Made with ❤️ by [JAY NAKASHE] – always building tech with purpose.
+ Admin Panel (Next.js)
 
+ Wearable integration (e.g. Fitbit/Smartwatch sync)
+
+ Offline voice support (for villages)
+
+ This is a student project made for learning purposes only. Always consult a certified medical professional for health advice.
+
+Made with ❤️ by JAY NAKASHE
+Built for people who want tech to care, not just compute.
