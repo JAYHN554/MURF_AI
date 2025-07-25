@@ -1,0 +1,30 @@
+✅ Day 1 – GitHub Task List (One-Liners)
+Create public GitHub repo arogya-saathi-ai
+
+Setup folder structure: /backend and /frontend
+
+Add .gitignore (Python + Node + Expo rules)
+
+Initialize FastAPI in /backend/main.py
+
+Create OCR function in /backend/services/ocr.py
+
+Create simplify function using GPT in /backend/services/simplify.py
+
+Build /upload API endpoint (upload → OCR → simplify → return)
+
+Add requirements.txt after pip freeze
+
+Create basic React Native project in /frontend using Expo
+
+Add UploadScreen.js with image picker + fetch POST to backend
+
+Test image upload → see simplified result in frontend
+
+Commit all changes with clear messages
+
+Push code to GitHub
+
+Update README.md with project overview + setup steps
+
+Optional: Add one sample test report image in /sample_data/
