@@ -1,30 +1,13 @@
-✅ Day 1 – GitHub Task List (One-Liners)
-Create public GitHub repo arogya-saathi-ai
+🛠️ Day 1 – Project Setup & OCR MVP
+This day is all about laying the tech foundation and getting OCR working for images, which is the entry point of the app.
 
-Setup folder structure: /backend and /frontend
+✅ Goals for Day 1:
+Initialize the React Native app (Expo)
 
-Add .gitignore (Python + Node + Expo rules)
+Design basic UI for upload screen
 
-Initialize FastAPI in /backend/main.py
+Implement image-based OCR (from camera/gallery)
 
-Create OCR function in /backend/services/ocr.py
+Print OCR result to console/UI
 
-Create simplify function using GPT in /backend/services/simplify.py
-
-Build /upload API endpoint (upload → OCR → simplify → return)
-
-Add requirements.txt after pip freeze
-
-Create basic React Native project in /frontend using Expo
-
-Add UploadScreen.js with image picker + fetch POST to backend
-
-Test image upload → see simplified result in frontend
-
-Commit all changes with clear messages
-
-Push code to GitHub
-
-Update README.md with project overview + setup steps
-
-Optional: Add one sample test report image in /sample_data/
+Push working version to GitHub
